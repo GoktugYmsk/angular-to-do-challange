@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 
+import { Model } from './model';
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -7,14 +9,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'first-angular-project';
-  user = 'Göktuğ';
 
-  items = [
-    { description: "kahvaltı", action: "No" },
-    { description: "Sinema", action: "No" },
-    { description: "Kahve", action: "No" },
-    { description: "Ders", action: "No" },
-    { description: "Angular", action: "No" },
-  ];
+  model = new Model()
 
+  getName() {
+    return this.model.user;
+  }
+  getItems() {
+    return this.model.items;
+  }
 }
