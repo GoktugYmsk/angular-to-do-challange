@@ -6,7 +6,7 @@ export class Model {
             this.items = [
                 new ToDoItems("Spor", false),
                 new ToDoItems("Kahvaltı", false),
-                new ToDoItems("Sinema", false),
+                new ToDoItems("Sinema", true),
                 new ToDoItems("Kahve", false),
             ];
     }
